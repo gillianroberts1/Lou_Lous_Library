@@ -1,0 +1,32 @@
+
+
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+    
+  
+
+    <div class="book-container"></div>
+    <h1> Book Collection</h1>
+    {% for book in books %}
+        <div class="collection">
+            <a href="/books/{{books.index(book)}}"> {{book.title }}</a>
+            <p> Author: {{ book.author }}</p>
+            <p> Genre: {{book.genre}}</p>
+        </div>
+    </div>
+
+  
+    {% endfor %}
+
+{% endblock %}
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css' )}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Tektur:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Tektur:wght@500&display=swap" rel="stylesheet">
+        <title> Lou Lou's Library</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="../static/css/lou_lou_logo.png" alt="logo">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/books">Book Collection</a></li>
+                    <li><a href="/books/new">Add New Book</a></li>
+                </ul>
+            </nav>
+            <a class ='cta' href="#"><button>Login</button></a>
+        
+        </header>
+        <hr>
+<main>
+        {% block content %} {% endblock %}    
+  
+</main>
+    <footer>
+    <hr>
+        <h3>Design by - CodeCarmenCita &copy; 2023</h3>
+    </footer>
+    </body>
+
+    
+    
+</html>

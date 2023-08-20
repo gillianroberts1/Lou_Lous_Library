@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+ <div class="update_check_out">
+
+        <div class="single_book">
+            <a> {{book.title }}</a>
+            <p> Author: {{ book.author }}</p>
+            <p> Genre: {{book.genre}}</p>
+        </div>
+        
+        <div class="check_out">
+        <p>Available:</p>
+        {% if book.checked_out %}
+            <span>&#128078;</span>
+            {% else %}
+            <span>&#128077</span>
+        </div>
+        {%endif%}
+        <hr>
+
+    
+
+   
+    
+
+        <form accept="/books/{{index}}" method="POST">
+        <label for="checked_out">Checked Out?</label>
+        <input type="checkbox" name="checked_out" {{"checked" if book.checked_out}}/>
+        <input type="submit" value="Update"/> 
+        </form>
+
+        <form action="/books/delete/{{index}}" method="POST">
+        <button>Delete</button></form>
+    </div>
+
+  
+
+{% endblock %}
+
+
+
+
+

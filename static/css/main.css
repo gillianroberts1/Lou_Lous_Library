@@ -1,0 +1,256 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Tektur:wght@500&display=swap'); */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white ; 
+} 
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color: rgb(71,39,77);
+    text-decoration: none;
+    font-style: italic;
+}
+
+header {
+    position:sticky;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+    padding-right: 5%;
+}
+
+.logo {
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+}
+
+nav {
+    order: 2;
+}
+
+.cta {
+    order: 1;
+    padding-right: 30px;
+}
+
+.nav_links  {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav_links li:nth-child(1) {
+    
+    padding: 0px 20px 0px 80px ;
+
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+
+.nav_links li a:hover {
+color: #0088a9;
+}
+
+button {
+    margin-left: 20px;
+    padding: 20px 50px;
+    margin-left: 20px;
+    background-color: rgb(71,39,77, 1);
+    color: rgb(225,226,53);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #0088a9;
+
+
+}
+
+.collection {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    background-color:white;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px 2px rgb(71,39,77, 1);
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+
+   
+}
+.collection a:hover {
+    color: #0088a9;
+    
+
+
+}
+
+h1 {
+    display: flex;
+    padding-left: 50px; 
+    font-family: "Montserrat", sans-serif;
+    color: rgb(71,39,77, 1);
+    margin-top: 50px;
+}
+
+
+
+.collection a {
+    padding-bottom: 40px;
+    font-size: 20px;
+}    
+
+.single_book a {
+    display: flex;
+    margin-bottom: 30px;
+    font-size: 18px;
+    
+}
+
+
+
+.update_check_out {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: normal;
+    width: 700px;
+    height: 400px;
+    background-color:white;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px 2px rgb(71,39,77, 1);
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+
+}
+.update_check_out p {
+   
+    padding-top: 30px;
+    
+}
+
+.update_check_out input[type="submit"] {
+    background-color: rgb(71,39,77, 1);
+    color: rgb(225,226,53);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:all 0.3s ease 0s;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+input[type="checkbox"] {
+    background-color: black;
+    width: unset;
+    margin-bottom: 20px;
+    accent-color: rgb(71,39,77, 1);
+}
+
+.update_check_out button {
+    display:inline;
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 200px;
+    
+    padding:10px;
+    font-size: 12px;
+    
+}
+
+
+.form_layout {
+    display: grid;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background-color:white;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px 2px rgb(71,39,77, 1);
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+
+.form_element {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+   
+}
+.form.form_element label {
+    height: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+  
+    
+   
+
+
+
+input {
+    font-size: 20px;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+section h1 {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+footer {
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 100px;
+    background-color: rgb(71,39,77, 1);
+}
+
+footer h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 20px;
+    background-color: rgb(71,39,77, 1);
+    color:rgb(225,226,53);
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+main {
+  padding-bottom: 250px;
+}

@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+<h1> Add New Book to Collection</h1>
+</head>
+
+<form class="form_layout" action="/books" method="post">
+<div class="form_element">
+<label for ="title"></label>
+<input type="text" name="title" placeholder="Title"/>
+</div>
+
+<div class="form_element">
+<label for="author"></label>
+<input type="text" name="author" placeholder="Author"/>
+</div>
+
+<div class="form_element">
+<label for="genre"></label>
+<input type="text" name="genre" placeholder="Genre"/>
+</div>
+
+<div class="checkout_book">
+<label for="'checked_out">Checked Out:</label>
+<input type="checkbox" name="checked_out"/>
+</div>
+
+<input type="submit" value="Add Book"/>
+</form>
+
+{% endblock %}
+</html>
+
+
+
+
+
+
+
+
